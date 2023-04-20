@@ -14,10 +14,18 @@ function App() {
   const [mostrarFormulario, actualizarMostrar]=useState(false)
   const [colaboradores, actualizarColaboradores]=useState([{
     id: uuidv4(),
-    equipo: "FrontEnd",
+    equipo: "Programacion",
     foto: "https://github.com/harlandlohora.png",
     nombre: "Harland Lohora",
     puesto: "Instructor",
+    fav:false
+  },
+  {
+    id: uuidv4(),
+    equipo: "FrontEnd",
+    foto: "https://github.com/CresMendez.png",
+    nombre: "Crescencio Mendez",
+    puesto: "Desarrollador de software",
     fav:true
   },
   {
@@ -54,17 +62,18 @@ function App() {
   }])
 
   const [equipos, actualizarEquipos]= useState([
-    {
-      id: uuidv4(),
-      titulo:"Programacion",
-      colorPrimario:"#57C278",
-      colorSecundario:"#D9F7E9"
-    },
+
     {
       id: uuidv4(),
       titulo:"FrontEnd",
       colorPrimario:"#82CFFA",
       colorSecundario:"#E8F8FF"
+    },
+    {
+      id: uuidv4(),
+      titulo:"Programacion",
+      colorPrimario:"#57C278",
+      colorSecundario:"#D9F7E9"
     },
     {
       id: uuidv4(),
